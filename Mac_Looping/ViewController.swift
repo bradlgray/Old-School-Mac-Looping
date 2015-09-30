@@ -13,14 +13,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var items = ["BMW"]
+        
+        Label.text = ""
+        var code = ["load floppy disc... \n", "compiling... \n", "..... \n", "................. \n", "welcome user"   ]
+        
+        
+        for coding in code {
+            
+           var txt = Label.text!
+            
+            txt += coding
+            
+            Label.text = txt
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+       
 
 }
+    
+   
+
+
+
+    
+    
+    
+
+}
+
 
